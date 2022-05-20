@@ -6,7 +6,7 @@ if __name__ == "__main__":
     try:
         url = sys.argv[1]
     except:
-        sys.exit("provide arg 1, an url to a kn-article")
+        sys.exit("provide arg 1, an url to a valid source (e.g. economist-article)")
     try:
         html = requests.get(url).text
     except:
